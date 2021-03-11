@@ -1,0 +1,10 @@
+{% extends "base" %}
+
+{% block content %}  
+  
+  
+  <h1>Post Contents Scraped and Stored</h1>
+  
+ 
+ 
+{% endblock content %}

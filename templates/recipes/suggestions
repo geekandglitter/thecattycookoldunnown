@@ -1,0 +1,24 @@
+{% extends "base" %}
+
+{% block content %}
+
+
+
+  <p>Results will be shown in order of relevance (the number of search criteria met) </p>
+  <span>
+
+  <form action="suggestionresults"   method="POST" enctype= "multipart/form-data" >
+
+  <input type="hidden" name ="dictmap" value="{{ dictmap }}">
+
+  <button type="reset" value="Clear all checked boxes">Clear All Checked Boxes</button>
+  {{mylist | safe}}
+    {% csrf_token %}
+
+
+  </form>
+
+  </span>
+
+ <br><br>
+{% endblock content %}
